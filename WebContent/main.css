@@ -21,24 +21,64 @@ h1 {
 	flex-direction : column;
 	align-items : center;
 	font-weight : 600;
-	margin : 0;
-	padding : 8px 20px;	
+	margin-left : 120px;
+	padding : 8px 0px;
+	/* padding : 상우하좌(시계방향) 여백 조절(숫자 하나)
+				 상하, 좌우 여백 조절(숫자 두개)
+				 상 우 하 좌 각각 여백 조절(숫자 네개)
+				 ※ margin도 똑같음 */	
 }
 
-a,abbr,acronym,address,applet,b,big,blockquote,body,button,caption,
-center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,footer,form,
-h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,
-nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,sup,
-table,tbody,td,tfoot,th,thead,title,tr,tt,u,ul,var {
-     background: transparent;
-     border: 0;
-     margin: 0;
-     outline: 0;
-     padding: 0;
-     vertical-align: baseline
+#fullscreen{
+	width: 1200px;
+	height: 1200px;
+	background-color: grey;
 }
-
-ol,ul {
-     list-style: none
+#screen1{
+	width: 400px;
+	height: 400px;
+	background-color: black;
+	float: left;
 }
-
+#screen1-1{
+	width: 400px;
+	height: 400px;
+	background-color: rgb(255, 0, 0);
+}
+#screen1-2{
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+}
+#screen2{
+	width: 400px;
+	height: 400px;
+	background-color: black;
+	float: left;
+}
+#screen2-1{
+	width: 400px;
+	height: 400px;
+	background-color: blue;
+}
+#screen2-2{
+	width: 400px;
+	height: 400px;
+	background-color: green;
+}
+#screen3{
+	width: 400px;
+	height: 400px;
+	background-color: black;
+	float: left;
+}
+#screen3-1{
+	width: 400px;
+	height: 400px;
+	background-color: black;
+}
+#screen3-2{
+	width: 400px;
+	height: 400px;
+	background-color: pink;
+}
