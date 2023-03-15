@@ -54,6 +54,7 @@ h1 {
 
 article {
 	float : left;
+	text-align: center;
 	margin-left : 60px;
 	margin-bottom : 60px;
 }
@@ -62,4 +63,11 @@ img {
 	width : 200px;
 	height : 200px;
 	display : block;
-}
+} 
+
+footer {
+	font-family: 'KCC-DodamdodamR';
+	color:#b0b0b0;
+	text-align: center;
+	display: block;
+	}
