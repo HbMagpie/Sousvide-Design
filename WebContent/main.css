@@ -12,9 +12,9 @@
     font-style: normal;
 }
 
-/* 
-하이퍼링크 밑줄 없애기
-a {text-decoration-line: none;} */
+.login, .new {
+	text-align: right;
+}
 
 h1 {
 	font-family: 'KCC-Ganpan';
@@ -28,6 +28,8 @@ h1 {
 }
 
 .menu-item {
+	text-decoration-line: none; /* 하이퍼링크 밑줄 없애기*/
+	
 	font-family: 'KCC-DodamdodamR';
 	font-size : 25px;
 	float : left; /* 왼쪽부터 한줄로 정렬 */
@@ -37,7 +39,7 @@ h1 {
 	flex-direction : column;
 	align-items : center;
 	font-weight : 600;
-	margin-left : 120px;
+	margin-left : 0;
 	padding : 8px 0px;
 	/* padding : 상우하좌(시계방향) 여백 조절(숫자 하나)
 				 상하, 좌우 여백 조절(숫자 두개)
@@ -45,8 +47,29 @@ h1 {
 				 ※ margin도 똑같음 */	
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 8px 12px;
+}
+
+.navbar__menu { 
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  
+}
+
+.navbar__menu li {  
+  color: #000000; /* 하이퍼링크 색상 없애기 */
+  padding: 8px 30px;
+}
+
 #wrap {
-	width : 1000px;
+	width : 1200px;
 	margin : 0 auto;
 	overflow : hidden;
 	padding-top : 30px;
@@ -55,7 +78,7 @@ h1 {
 article {
 	float : left;
 	text-align: center;
-	margin-left : 60px;
+	margin-left : 30px;
 	margin-bottom : 60px;
 }
 

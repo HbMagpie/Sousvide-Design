@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<!-- 파비콘 설정(크롬) -->
+  <link rel="shortcut icon" href="image/sousvide favicon.ico">
+  <link rel="stylesheet" href="main.css">
+  <!-- /* 모바일 웹 페이지 확대 축소 고정*/ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+<link rel="stylesheet" href="Login.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<form action="animatedLogin.html" class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+            <input type="text">
+            <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+<div class="bottom-text">
+            Don't have account? <a href="#">Sign up</a>
+        </div>
+
+    </form>
+    
+    <script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur",function(){
+            if($(this).val() == "")
+            $(this).removeClass("focus");
+        })
+    </script>
+</body>
+</html>
