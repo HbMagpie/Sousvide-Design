@@ -10,6 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
 </head>
 <body>
+<input class="new" type="button" style="margin:0; padding:0; text-align : center; float : right; width : 100px; height : 50px; background-color: black; color : white; cursor: pointer;" value="회원가입">
+<input class="login" type="button" value="로그인" style="margin:0; padding:0; text-align : center; float : right; width : 100px; height : 50px; background-color: black; color : white; cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Login.html';">
+<br>
 <h1 style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Main(PROJECT).html';">SOUSVIDE DESIGN</h1>
 
   <nav class="navbar">
@@ -38,13 +41,25 @@
 <br>
 <p>수비드 디자인은 지난 2년간 젊은 디자인 그룹에서 활동하며 공간을 디자인 해왔습니다.</p>
 <p>고객의 요구와 트렌드에 부합되는 차별화된 공간을 디자인 하는 것이
-수비드 디자인의 목표이며, 더나아가 사람과 공간 사이의 이야기를 담아내는것이 
+수비드 디자인의 목표이며,<br> 더나아가 사람과 공간 사이의 이야기를 담아내는것이 
 수비드 디자인(SOUSVIDE DESIGN)만의 방향성 입니다.</p>
 <br><br><br>
 <h2>견적 문의</h2>
 <br>
 <p>프로젝트 의뢰는 이메일 또는 유선 전화로 받고 있습니다.<br><br>
 아래의 주소로 구체적인 의뢰 내용을 알려주세요.</p>
+
+<div class="contact_form">
+	<!-- 1. 로고 -->
+	<img class="logo" src="image/수비드2.png">
+	<!-- 2-1. 필드 -->
+	<div class="field">
+		<b>제목</b>
+		<span class="placehold-text"><input type="text"></span>
+		<b>작성자</b>
+		<span class="placehold-text"><input type="text"></span>
+	</div>
+</div>
 
 <p>
 ※ 아래 서식을 작성 해주시면 원활한 상담이 가능합니다.<br>
@@ -59,7 +74,19 @@
 감사합니다.
 </p>
 <br><br>
-<p>여기에 폼 내용 작성</p>
+
+<div class="contact_form">
+	<!-- 2-2. 필드 -->
+	<div class="field">
+		<b>견적문의(Quotation Request)</b>
+		<br><br>
+		<textarea rows="20" cols="50" placeholder="상단 내용을 적어주시면 빠른 상담을 진행 할 수 있습니다."></textarea>
+	</div>
+</div>
+<br><br>
+<!-- 3. 견적 의뢰 버튼 -->
+<input type="submit" value="견적 의뢰">
+
 <br><br>
 
 <table>
