@@ -63,28 +63,22 @@ h1 {
   padding: 8px 30px;
 }
 
-#wrap {
-	width : 1200px;
-	margin : 0 auto;
-	overflow : hidden;
-	padding-top : 30px;
-}
-	
-article {
-	float : left;
-	text-align: center;
-	margin-left : 30px;
-	margin-bottom : 60px;
-}
 
-img {
-	width : 200px;
-	height : 200px;
-	display : block;
-} 
+
+/* Start - footer 하단고정 CSS */
+#wrapper {
+	height : auto;
+	min-height: 100%;
+	padding-bottom : 20px; /* footer 높이 */
+}
 
 footer {
+	height : 20px;	/* footer 높이 */
+	position : relative;
+	transform : translateY(-100%);
 	font-family: 'KCC-DodamdodamR';
 	color:#b0b0b0;
-	text-align: center;	
-}
+	text-align: center;
+	
+	}
+/* End - footer 하단고정 CSS */
