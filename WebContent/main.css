@@ -1,90 +1,150 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'KCC-Ganpan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'KCC-DodamdodamR';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-DodamdodamR.woff2') format('woff2');
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-h1 {
-	font-family: 'KCC-Ganpan';
-	font-size : 50px;
-	margin-top : 50px;
-	text-align: center;
-	display : flex;
-	flex-direction : column;
-	align-items : center;
-	font-weight : 600;
+* {
+	margin : 0px;
+	padding : 0px;
+	font-family: 'SUIT-Regular';
 }
 
-.menu-item {
-	font-family: 'KCC-DodamdodamR';
-	text-decoration-line: none; /* 하이퍼링크 밑줄 없애기*/
-	font-size : 25px;
-	float : left; /* 왼쪽부터 한줄로 정렬 */
-	text-align: center;
-	/* 수직으로 가운데 정렬은 안쪽 여백을 둔다. */
-	display : flex;
-	flex-direction : column;
-	align-items : center;
-	font-weight : 600;
-	margin-left : 0;
-	padding : 8px 0px;
-	/* padding : 상우하좌(시계방향) 여백 조절(숫자 하나)
-				 상하, 좌우 여백 조절(숫자 두개)
-				 상 우 하 좌 각각 여백 조절(숫자 네개)
-				 ※ margin도 똑같음 */	
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--background-color);
-  padding: 8px 12px;
-}
-
-.navbar__menu { 
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding-left: 0;
-  
-}
-
-.navbar__menu li {  
-  color: #000000; /* 하이퍼링크 색상 없애기 */
-  padding: 8px 30px;
-}
-
-#wrap {
+.container {
 	width : 1200px;
 	margin : 0 auto;
-	overflow : hidden;
-	padding-top : 30px;
-}
-	
-article {
-	float : left;
-	text-align: center;
-	margin-left : 30px;
-	margin-bottom : 60px;
 }
 
-img {
-	width : 200px;
-	height : 200px;
-	display : block;
-} 
+/* 메뉴 상단 고정 */
+.sticky{
+    position:sticky;
+    top:0px;
+}
+        
+/* Start! 1. 깃허브, 티스토리, 블로그 */
+.top {
+	padding: 10px 30px;
+	line-height: 50px;
+	text-align:right;
+}
+.top_menu {
+	display: inline-block;  /* div가 inline 요소가 되어서 위에 text-align:right;가 적용됨 */
+}
+/* End! 1. 깃허브, 티스토리, 블로그 */
+
+/* Start! 2. 타이틀, 네이게이션 */
+ul {list-style:none}
+a{text-decoration:none;font-size:15px}
+nav{overflow:hidden;height:80px;}
+hr{border: solid 1px #eeeeee;}
+
+nav>a:link { color: #6aa888; text-decoration: none}
+nav>a:visited { color: #6aa888; text-decoration: none}
+nav>a:hover { color: #6aa888; text-decoration: none}
+/* a:link : 클릭하지 않은 링크
+a:visited : 한번 클릭했던 혹은 다녀갔던 링크
+a:hover : 링크를 클릭하려고 마우스를 가져갔을 때 */
+
+#navbar>a {
+  display: block; /* a태그는 글자성격 = inline */
+  float: left;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 50px;
+  padding: 15px 30px;
+}
+
+li>a:link { color: #c0c0c0; text-decoration: none}
+li>a:visited { color: #c0c0c0; text-decoration: none}
+li>a:hover { color: #666666; text-decoration: none}
+
+#navbar>ul {
+  float: right;
+}
+#navbar>ul li {
+  float: left;
+  padding: 15px 30px;
+  line-height: 50px;
+}
+​
+/* End! 2. 타이틀, 네이게이션 */
+
+/* Start! 3. 프로젝트 이미지 자동 슬라이드 */
+#slide {
+    width:100%;
+    padding: 0 15vw;
+    position: relative;
+    margin:1vw 0 0 0;
+}
+
+#slide i{
+    font-size: 30px;
+}
+
+#slide .slider-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#slide .slider-container span{
+    position: absolute;
+    z-index: 99;
+    top:50%;
+    cursor: pointer;
+}
+
+#slide .slider-container .leftBtn{
+    left: 12%;
+    transform: translate(0,-50%);
+}
+
+#slide .slider-container .rightBtn{
+    right: 12%;
+    transform: translate(0,-50%);
+}
+
+#slide .slider-container .slider{
+    display:flex;
+    width: 101%;
+}
+
+#slide .slider-container .slider span{
+    display: block;
+    position: relative;
+    min-width: 100%;
+}
+
+#slide .slider-container .slider span .text-wrap{
+    position: absolute;
+    top:50%;
+    left:5%;
+    transform:translate(0,-50%);
+    width:29%;
+    color:#fff;
+}
+
+#slide .slider-container .slider span .text-wrap h1{
+    line-height: 140%;
+    font-size: 33px;
+}
+
+#slide .slider-container .slider span .text-wrap h4{
+    font-size: 13px;
+    margin:30px 0 0 0;
+}
+
+#slide .slider-container .slider span .text-wrap h5{
+    line-height: 140%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin:0 0 10px 0;
+}
+/* End! 3. 프로젝트 이미지 자동 슬라이드 */
 
 footer {
-	font-family: 'KCC-DodamdodamR';
 	color:#b0b0b0;
 	text-align: center;	
 }

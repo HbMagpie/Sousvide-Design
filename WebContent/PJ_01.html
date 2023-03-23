@@ -37,13 +37,16 @@
   
 <div id="wrapper">
 
-	<div>
-<img src="image/project/PJ_01.png" style="margin-left:200px; margin-top:50px; width:700px; height:700px;">
+<!-- 이미지와 텍스트 나란히 놓기(footer는 하단 고정)
+이미지 부분 div에 style="display:inline-block;vertical-align:top;"
+텍스트 부분 div에 style="display:inline-block;" -->
+	<div style="display:inline-block;vertical-align:top;">
+<img src="image/project/PJ_01.png" alt="img" style="margin-left:200px; margin-top:50px; width:700px; height:700px;">
 <!-- float:left; = 이미지를 왼쪽으로 치우치게 함.
 근데 이러한 float 속성은 자칫 하위 div 애들을 자석처럼 모아 겹쳐지게 하는 기능이 있음
 이러한 float의 자석기능을 방해하는 것이 바로 clear:both;임 -->
 	</div>
-	<div>
+	<div style="display:inline-block;">
 <p>EDFrenewables<br>
 Area: 118.5㎡<br>
 Location: 서울 중구<br>

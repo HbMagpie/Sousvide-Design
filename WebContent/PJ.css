@@ -24,6 +24,7 @@ h1 {
 }
 
 .menu-item {
+	color : black;
 	font-family: 'KCC-DodamdodamR';
 	text-decoration-line: none; /* 하이퍼링크 밑줄 없애기*/
 	font-size : 25px;
@@ -43,6 +44,7 @@ h1 {
 }
 
 .navbar {
+	
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +53,7 @@ h1 {
 }
 
 .navbar__menu { 
+  
   list-style: none;
   display: flex;
   margin: 0;
