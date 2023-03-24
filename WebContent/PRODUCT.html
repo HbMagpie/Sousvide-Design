@@ -3,37 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>수비드 디자인 | Sousvide Design</title>
+  
   <!-- 파비콘 설정(크롬) -->
   <link rel="shortcut icon" href="image/sousvide favicon.ico">
+  
   <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="imgSild.js"></script>
+  
   <!-- /* 모바일 웹 페이지 확대 축소 고정*/ -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
 </head>
-<body>
-<input class="new" type="button" style="margin:0; padding:0; text-align : center; float : right; width : 100px; height : 50px; background-color: black; color : white; cursor: pointer;" value="회원가입">
-<input class="login" type="button" value="로그인" style="margin:0; padding:0; text-align : center; float : right; width : 100px; height : 50px; background-color: black; color : white; cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Login.html';">
-<br>
-<h1 style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Main(PROJECT).html';">SOUSVIDE DESIGN</h1>
 
-  <nav class="navbar">
-  
-  	  <div class="navbar__logo">
-        
-      </div>
-      
-      <ul class="navbar__menu">
-        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/COMPANY.html';">COMPANY</a></li>
-        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Main(PROJECT).html';">PROJECT</a></li>
-        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/PRODUCT.html';">PRODUCT</a></li>
-        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/CONTACT.html';">CONTACT</a></li>
-        <li><a href="#" class="menu-item">인테리어 디자인 | 시공문의</a></li>
+<body>
+<div class="container">
+ <div class="sticky">
+<!-- Start! 1. 깃허브, 티스토리, 블로그 -->
+ <div class="top">
+    <ul>
+      <li class="top_menu"><a href="https://github.com/HbMagpie">GITHUB</a>&nbsp;&nbsp;&nbsp;</li>
+      <li class="top_menu"><a href="https://hb777.tistory.com/" >TISTORY</a>&nbsp;&nbsp;&nbsp;</li>
+      <li class="top_menu"><a href="https://blog.naver.com/qhfk3242">BLOG</a></li>
+    </ul>    
+ </div>
+<!-- End! 1. 깃허브, 티스토리, 블로그 -->
+ 
+<!-- Start! 2. 타이틀, 네이게이션 -->
+ <nav id="navbar">
+    <a class="title" href="Main(PROJECT).html">SOUSVIDE DESIGN</a>
+    <ul>
+      <li><a href="COMPANY.html">COMPANY</a></li>
+      <li><a href="Main(PROJECT).html">PROJECT</a></li>
+      <li><a href="PRODUCT.html">PRODUCT</a></li>
+      <li><a href="CONTACT.html">CONTACT</a></li>
+    </ul>
+    <!-- 카카오, 인스타 이미지 네비게이션
         <li><a href="#" class="menu-item"><img alt="kakaotalk" src="image/kakaotalk.svg" style="width:40px; height:40px;"></a></li>
-        <li><a href="#" class="menu-item"><img alt="instagram" src="image/instagram.svg" style="width:40px; height:40px;"></a></li>
-      </ul>  
-      
-       <ul class="navbar__icons">
-      </ul>
+        <li><a href="#" class="menu-item"><img alt="instagram" src="image/instagram.svg" style="width:40px; height:40px;"></a></li> -->
   </nav>
+<!-- End! 2. 타이틀, 네이게이션 -->
+ </div>
   
 <div id="wrap">
 	<article><a href="https://www.webudding.com/product/detail/15525/"><img src="image/product/PD_01.png"></a></article>
@@ -44,6 +52,7 @@
 	<article><a href="https://www.webudding.com/product/detail/15540/"><img src="image/product/PD_06.png"></a></article>
 	<article><a href="https://www.webudding.com/product/detail/15457/"><img src="image/product/PD_07.png"></a></article>
 	<article><a href="https://www.webudding.com/product/detail/15543/"><img src="image/product/PD_08.png"></a></article>
+</div>
 </div>
 </body>
 <footer>

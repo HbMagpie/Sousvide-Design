@@ -35,10 +35,9 @@
 /* End! 1. 깃허브, 티스토리, 블로그 */
 
 /* Start! 2. 타이틀, 네이게이션 */
-ul {list-style:none}
+ul {list-style:none;}
 a{text-decoration:none;font-size:15px}
 nav{overflow:hidden;height:80px;}
-hr{border: solid 1px #eeeeee;}
 
 nav>a:link { color: #6aa888; text-decoration: none}
 nav>a:visited { color: #6aa888; text-decoration: none}
