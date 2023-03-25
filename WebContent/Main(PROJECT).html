@@ -7,7 +7,7 @@
   <!-- 파비콘 설정(크롬) -->
   <link rel="shortcut icon" href="image/sousvide favicon.ico">
   
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <script type="text/javascript" src="imgSild.js"></script>
   
   <!-- /* 모바일 웹 페이지 확대 축소 고정*/ -->
@@ -40,71 +40,72 @@
         <li><a href="#" class="menu-item"><img alt="kakaotalk" src="image/kakaotalk.svg" style="width:40px; height:40px;"></a></li>
         <li><a href="#" class="menu-item"><img alt="instagram" src="image/instagram.svg" style="width:40px; height:40px;"></a></li> -->
   </nav>
+  <hr color="#e7e7e7">
 <!-- End! 2. 타이틀, 네이게이션 -->
-<hr>
  </div>
  
- 
 <!-- Start! 3. 프로젝트 이미지 자동 슬라이드 -->
-<br><br>
-    <div id="slide">
-        <div class="slider-container">
-            <span class="leftBtn">
-                <i class="fa-solid fa-chevron-left"></i>
-            </span>
-            <div class="slider">
-                <span class="first-img">
-                    <div class="text-wrap">
-                        <h5>WEEKLY DESIGN</h5>
-                        <h1>사용자가 좋아하는 디자인, WEB/APP 디자인</h1>
-                        <h4>WEB/APP 바로가기 ></h4>
-                    </div>
-                    <img src="image/project/PJ_03.png" alt="0" />
-                </span>
-                <span>
-                    <div class="text-wrap">
-                        <h5>LOUDSOURCING</h5>
-                        <h1>디자인부터 아이디어까지, &nbsp; 19만 전문가에게 의뢰하세요</h1>
-                        <h4>콘테스트 개최하기 ></h4>
-                    </div>
-                    <img src="image/project/PJ_01.png" alt="1" />
-                </span>
-                <span>
-                    <div class="text-wrap">
-                        <h5>WEEKLY DESIGN</h5>
-                        <h1>디자인 트렌드는 라우드소싱 2022 로고/BI 디자인</h1>
-                        <h4>로고/BI 바로가기 ></h4>
-                    </div>
-                    <img src="image/project/PJ_02.png" alt="2" />
-                </span>
-                <span>
-                    <div class="text-wrap">
-                        <h5>WEEKLY DESIGN</h5>
-                        <h1>사용자가 좋아하는 디자인, WEB/APP 디자인</h1>
-                        <h4>WEB/APP 바로가기 ></h4>
-                    </div>
-                    <img src="image/project/PJ_03.png" alt="3" />
-                </span>
-                <span class="last-img">
-                    <div class="text-wrap">
-                        <h5>LOUDSOURCING</h5>
-                        <h1>디자인부터 아이디어까지, &nbsp; 19만 전문가에게 의뢰하세요</h1>
-                        <h4>콘테스트 개최하기 ></h4>
-                    </div>
-                    <img src="image/project/PJ_01.png" alt="4" />
-                </span>
-            </div>
-            <span class="rightBtn">
-                <i class="fa-solid fa-chevron-right"></i>
-            </span>
-        </div>
-    </div>
+ 
+ <div class="slidebox">
+ 	<input type="radio" name="slide" id="slide01" checked>
+ 	<input type="radio" name="slide" id="slide02">
+ 	<input type="radio" name="slide" id="slide03">
+ 	<input type="radio" name="slide" id="slide04">
+ 	<ul class="slidelist">
+ 		<li class="slideitem">
+ 			<div>
+ 				<a><img src="image/project/PJ_02.png"></a>
+ 			</div>
+ 		</li>
+ 		<li class="slideitem">
+ 			<div>
+ 				<a><img src="image/project/PJ_03.png"></a>
+ 			</div>
+ 		</li>
+ 		<li class="slideitem">
+ 			<div>
+ 				<a><img src="image/project/PJ_04.png"></a>
+ 			</div>
+ 		</li>
+ 		<li class="slideitem">
+ 			<div>
+ 				<a><img src="image/project/PJ_05.png"></a>
+ 			</div>
+ 		</li>
+ 	</ul>
+ </div>
 <!-- End! 3. 프로젝트 이미지 자동 슬라이드 -->
-
-
 </div>
 </body>
+
 <footer>
+ <br><br>
+ <hr color="#6aa888">
+ <br><br>
+ <table>
+	<tr>
+	  <td style="cursor:pointer;" onClick="location.href='Main(PROJECT).html'">HOME</td>
+	  <td style="cursor:pointer;" onClick="location.href='COMPANY.html'">COMPANY</td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td style="cursor:pointer;" onClick="location.href='Main(PROJECT).html'">PROJECT</td>  
+	  <td><p style="text-align:right;">010-1234-5678</p></td>
+	</tr>
+	<tr>	  
+	  <td></td>
+	  <td style="cursor:pointer;" onClick="location.href='PRODUCT.html'">PRODUCT</td> 
+	  <td><p style="text-align:right;">qhfkshdwkd777@naver.com</p></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td style="cursor:pointer;" onClick="location.href='CONTACT.html'">CONTACT</td>
+	  <td><p style="text-align:right;">서울특별시 송파구 까치밥로 77길 77 4F</p></td>
+	</tr>
+ </table>
+  <br>
   <p>Copyright ⓒ All Rights Reserved By SOUSVIDE DESIGN<p>
+  <br>
 </footer>
 </html>
