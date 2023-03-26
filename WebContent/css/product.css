@@ -74,77 +74,85 @@ li>a:hover { color: #666666; text-decoration: none}
 ​
 /* End! 2. 타이틀, 네이게이션 */
 
-/* Start! 3. 프로젝트 이미지 자동 슬라이드 */
+/* Start! 3. 굿노트 상품 이미지 */
 
-[name="slide"] {display:none;}
-.slidebox {max-width: 1000px;width: 100%;margin: 0 auto; position:relative;z-index:1}
-.slidebox img {max-width: 100%;}
-.slidebox .slidelist {
-	white-space: nowrap;
-	font-size: 0;
+.PD_img {
+	max-width:1200px;
+	width: 100%;
+	margin:0 auto;
+}
+
+.PD_img > ul {font-size:0;}
+
+.PD_img > ul > li {
+	display: inline-block;
+	vertical-align:top;
+	width: 30%;		/* 한 줄 이미지 각각 비율 */
+	margin-left:30px;
+}
+
+.PD_img > ul > li > a {
+	display: block;
+	width: auto;
+	text-decoration: none;
+	margin: 20px;
+}
+
+.PD_img > ul > li > a .screen {
+	position: relative;
 	overflow: hidden;
 }
-.slidebox .slideitem {
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
+
+.PD_img > ul > li > a .screen .t {
+	position: absolute;
+	bottom: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #FFF;
+	font-size: 26px;
+	font-weight: 900;
+	transition:all .35s;
+}
+
+.PD_img > ul > li > a .screen .b {
+	position: absolute;
+	top: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #FFF;
+	font-size: 12px;
+	transition:all .35s;
+}
+
+.PD_img > ul > li > a h3 {
+	font-size: 14px;
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+.PD_img > ul > li > a:hover .t {bottom:52%}
+.PD_img > ul > li > a:hover .b {top:52%}
+
+.PD_img > ul > li > a .screen::after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	z-index: 1;
+	opacity: 0;
 	transition: all .35s;
 }
 
-[id="slide01"]:checked ~ .slidelist .slideitem {transform: translateX(0);animation: slide01 20s infinite;}
-[id="slide02"]:checked ~ .slidelist .slideitem {transform: translateX(-100%);animation: slide02 20s infinite;}
-[id="slide03"]:checked ~ .slidelist .slideitem {transform: translateX(-200%);animation: slide03 20s infinite;}
-[id="slide04"]:checked ~ .slidelist .slideitem {transform: translateX(-300%);animation: slide04 20s infinite;}
-
-@keyframes slide01 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: -100%;}
-	48% {left: -100%;}
-	50% {left: -200%;}
-	73% {left: -200%;}
-	75% {left: -300%;}
-	98% {left: -300%;}
-	100% {left: 0%;}
+.PD_img > ul > li > a:hover .screen::after {
+	opacity: 1;
 }
 
-@keyframes slide02 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: -100%;}
-	48% {left: -100%;}
-	50% {left: -200%;}
-	73% {left: -200%;}
-	75% {left: 100%;}
-	98% {left: 100%;}
-	100% {left: 0%;}
-}
-
-@keyframes slide03 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: -100%;}
-	48% {left: -100%;}
-	50% {left: 200%;}
-	73% {left: 200%;}
-	75% {left: 100%;}
-	98% {left: 100%;}
-	100% {left: 0%;}
-}
-
-@keyframes slide04 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: 300%;}
-	48% {left: 300%;}
-	50% {left: 200%;}
-	73% {left: 200%;}
-	75% {left: 100%;}
-	98% {left: 100%;}
-	100% {left: 0%;}
-}
-/* End! 3. 프로젝트 이미지 자동 슬라이드 */
+/* End! 3. 굿노트 상품 이미지 */
 
 /* Start! 4. footer 부분 */
 table {
