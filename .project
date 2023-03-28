@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Sousvide_Design</name>
+=======
+	<name>Sousvide</name>
+>>>>>>> e49dc4b9d2b0afa3d5949bc27a48fdb8a853a41b
 	<comment></comment>
 	<projects>
 	</projects>
