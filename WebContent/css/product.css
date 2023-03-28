@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin : 0px;
+	padding : 0px;
+	font-family: 'SUIT-Regular';
+}
+
+.container {
+	width : 1200px;
+	margin : 0 auto;
+}
+
+/* 메뉴 상단 고정 */
+.sticky{
+    position:sticky; z-index:2;
+    top:0px;
+}
+        
+/* Start! 1. 깃허브, 티스토리, 블로그 */
+.top {
+	background-color:#FFFFFF;
+	padding: 10px 30px;
+	line-height: 50px;
+	text-align:right;
+}
+.top_menu {
+	display: inline-block;  /* div가 inline 요소가 되어서 위에 text-align:right;가 적용됨 */
+}
+/* End! 1. 깃허브, 티스토리, 블로그 */
+
+/* Start! 2. 타이틀, 네이게이션 */
+ul, li {list-style:none;}
+a{text-decoration:none;font-size:15px}
+nav{overflow:hidden;height:80px;}
+
+nav>a:link { color: #6aa888; text-decoration: none}
+nav>a:visited { color: #6aa888; text-decoration: none}
+nav>a:hover { color: #6aa888; text-decoration: none}
+/* a:link : 클릭하지 않은 링크
+a:visited : 한번 클릭했던 혹은 다녀갔던 링크
+a:hover : 링크를 클릭하려고 마우스를 가져갔을 때 */
+#navbar {
+  background-color:#FFFFFF;
+}
+
+#navbar>a {
+  display: block; /* a태그는 글자성격 = inline */
+  float: left;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 50px;
+  padding: 15px 30px;
+}
+
+li>a:link { color: #c0c0c0; text-decoration: none}
+li>a:visited { color: #c0c0c0; text-decoration: none}
+li>a:hover { color: #666666; text-decoration: none}
+
+#navbar>ul {
+  float: right;
+}
+#navbar>ul li {
+  float: left;
+  padding: 15px 30px;
+  line-height: 50px;
+}
+​
+/* End! 2. 타이틀, 네이게이션 */
+
+/* Start! 3. 굿노트 상품 이미지 */
+
+.PD_img {
+	max-width:1200px;
+	width: 100%;
+	margin:0 auto;
+}
+
+.PD_img > ul {font-size:0;}
+
+.PD_img > ul > li {
+	display: inline-block;
+	vertical-align:top;
+	width: 30%;		/* 한 줄 이미지 각각 비율 */
+	margin-left:30px;
+}
+
+.PD_img > ul > li > a {
+	display: block;
+	width: auto;
+	text-decoration: none;
+	margin: 20px;
+}
+
+.PD_img > ul > li > a .screen {
+	position: relative;
+	overflow: hidden;
+}
+
+.PD_img > ul > li > a .screen .t {
+	position: absolute;
+	bottom: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #FFF;
+	font-size: 26px;
+	font-weight: 900;
+	transition:all .35s;
+}
+
+.PD_img > ul > li > a .screen .b {
+	position: absolute;
+	top: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #FFF;
+	font-size: 12px;
+	transition:all .35s;
+}
+
+.PD_img > ul > li > a h3 {
+	font-size: 14px;
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+.PD_img > ul > li > a:hover .t {bottom:52%}
+.PD_img > ul > li > a:hover .b {top:52%}
+
+.PD_img > ul > li > a .screen::after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	z-index: 1;
+	opacity: 0;
+	transition: all .35s;
+}
+
+.PD_img > ul > li > a:hover .screen::after {
+	opacity: 1;
+}
+
+/* End! 3. 굿노트 상품 이미지 */
+
+/* Start! 4. footer 부분 */
+table {
+	width: 1200px;
+	height: 300px;
+	color: #666666;
+}
+footer {
+	width : 1200px;
+	margin : 0 auto;
+	color:#b0b0b0;
+	text-align: center;	
+}
+/* End! 4. footer 부분 */

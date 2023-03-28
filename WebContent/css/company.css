@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin : 0px;
+	padding : 0px;
+	font-family: 'SUIT-Regular';
+}
+
+.container {
+	width : 1200px;
+	margin : 0 auto;
+}
+
+/* 메뉴 상단 고정 */
+.sticky{
+    position:sticky; z-index:2;
+    top:0px;
+}
+        
+/* Start! 1. 깃허브, 티스토리, 블로그 */
+.top {
+	background-color:#FFFFFF;
+	padding: 10px 30px;
+	line-height: 50px;
+	text-align:right;
+}
+.top_menu {
+	display: inline-block;  /* div가 inline 요소가 되어서 위에 text-align:right;가 적용됨 */
+}
+/* End! 1. 깃허브, 티스토리, 블로그 */
+
+/* Start! 2. 타이틀, 네이게이션 */
+ul, li {list-style:none;}
+a{text-decoration:none;font-size:15px}
+nav{overflow:hidden;height:80px;}
+
+nav>a:link { color: #6aa888; text-decoration: none}
+nav>a:visited { color: #6aa888; text-decoration: none}
+nav>a:hover { color: #6aa888; text-decoration: none}
+/* a:link : 클릭하지 않은 링크
+a:visited : 한번 클릭했던 혹은 다녀갔던 링크
+a:hover : 링크를 클릭하려고 마우스를 가져갔을 때 */
+#navbar {
+  background-color:#FFFFFF;
+}
+
+#navbar>a {
+  display: block; /* a태그는 글자성격 = inline */
+  float: left;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 50px;
+  padding: 15px 30px;
+}
+
+li>a:link { color: #c0c0c0; text-decoration: none}
+li>a:visited { color: #c0c0c0; text-decoration: none}
+li>a:hover { color: #666666; text-decoration: none}
+
+#navbar>ul {
+  float: right;
+}
+#navbar>ul li {
+  float: left;
+  padding: 15px 30px;
+  line-height: 50px;
+}
+​
+/* End! 2. 타이틀, 네이게이션 */
+
+/* Start! 3. 회사 소개 */
+
+
+/* End! 3. 회사 소개 */
+
+/* Start! 4. footer 부분 */
+footer>table  {
+	width: 1200px; 
+	height: 300px;
+	color: #666666;
+}
+footer {
+	width : 1200px;
+	margin : 0 auto;
+	color:#b0b0b0;
+	text-align: center;	
+}
+/* End! 4. footer 부분 */
