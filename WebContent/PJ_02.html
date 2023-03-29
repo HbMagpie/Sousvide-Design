@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>수비드 디자인 | Sousvide Design</title>
+  <!-- 파비콘 설정(크롬) -->
+  <link rel="shortcut icon" href="image/sousvide favicon.ico">
+  <link rel="stylesheet" href="PJ.css">
+  <!-- /* 모바일 웹 페이지 확대 축소 고정*/ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+</head>
+<body>
+<input class="new" type="button" style="margin:0; padding:0; text-align : center; float : right; width : 100px; height : 50px; background-color: black; color : white; cursor: pointer;" value="회원가입">
+<input class="login" type="button" value="로그인" style="margin:0; padding:0; text-align : center; float : right; width : 100px; height : 50px; background-color: black; color : white; cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Login.html';">
+<br>
+<h1 style="cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Main(PROJECT).html';">SOUSVIDE DESIGN</h1>
+
+  <nav class="navbar">
+  
+  	  <div class="navbar__logo">
+        
+      </div>
+      
+      <ul class="navbar__menu">
+        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/COMPANY.html';">COMPANY</a></li>
+        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/Main(PROJECT).html';">PROJECT</a></li>
+        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/PRODUCT.html';">PRODUCT</a></li>
+        <li><a href="#" class="menu-item" style=" cursor: pointer;" onclick="location.href='http://localhost:9010/Sousvide/CONTACT.html';">CONTACT</a></li>
+        <li><a href="#" class="menu-item">인테리어 디자인 | 시공문의</a></li>
+        <li><a href="#" class="menu-item"><img alt="kakaotalk" src="image/kakaotalk.svg" style="width:40px; height:40px;"></a></li>
+        <li><a href="#" class="menu-item"><img alt="instagram" src="image/instagram.svg" style="width:40px; height:40px;"></a></li>
+      </ul>  
+      
+       <ul class="navbar__icons">
+      </ul>
+  </nav>
+  
+<div id="wrapper">
+
+<!-- 이미지와 텍스트 나란히 놓기(footer는 하단 고정)
+이미지 부분 div에 style="display:inline-block;vertical-align:top;"
+텍스트 부분 div에 style="display:inline-block;" -->
+	<div style="display:inline-block;vertical-align:top;">
+<img src="image/project/PJ_02.png" alt="img" style="margin-left:200px; margin-top:50px; width:700px; height:700px;">
+<!-- float:left; = 이미지를 왼쪽으로 치우치게 함.
+근데 이러한 float 속성은 자칫 하위 div 애들을 자석처럼 모아 겹쳐지게 하는 기능이 있음
+이러한 float의 자석기능을 방해하는 것이 바로 clear:both;임 -->
+	</div>
+	<div style="display:inline-block;">
+<p>소전문화재단<br>
+Area: 131.8㎡<br>
+Location: 서울 강남구<br>
+completed: 2022.10.31</p>
+	</div>
+</div>
+
+</body>
+<footer>
+  Copyright ⓒ All Rights Reserved By SOUSVIDE DESIGN
+</footer>
+</html>
