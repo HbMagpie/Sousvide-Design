@@ -71,7 +71,6 @@ li>a:hover { color: #666666; text-decoration: none}
   padding: 15px 30px;
   line-height: 50px;
 }
-​
 /* End! 2. 타이틀, 네이게이션 */
 
 /* Start! 3. 프로젝트 이미지 자동 슬라이드 */
@@ -208,7 +207,10 @@ li>a:hover { color: #666666; text-decoration: none}
 /* End! 4. 프로젝트 */
 
 /* Start! 5. footer 부분 */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 822be9b36ba5dd5e5851fe04d82be74f75104145
 table {
 	width: 1200px;
 	height: 300px;
@@ -220,5 +222,8 @@ footer {
 	color:#b0b0b0;
 	text-align: center;	
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 822be9b36ba5dd5e5851fe04d82be74f75104145
 /* End! 5. footer 부분 */
