@@ -80,8 +80,8 @@ li>a:hover { color: #666666; text-decoration: none}
 /* End! 3. 회사 소개 */
 
 /* Start! 4. footer 부분 */
-footer>table  {
-	width: 1200px; 
+table {
+	width: 1200px;
 	height: 300px;
 	color: #666666;
 }
