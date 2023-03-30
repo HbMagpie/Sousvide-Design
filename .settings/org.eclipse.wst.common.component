@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-<<<<<<< HEAD
-    <wb-module deploy-name="Sousvide-Design">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Sousvide-Design"/>
-        <property name="java-output-path" value="/Sousvide-Design/build/classes"/>
-=======
-<<<<<<< HEAD
-    <wb-module deploy-name="Sousvide_Design">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Sousvide_Design"/>
-        <property name="java-output-path" value="/Sousvide_Design/build/classes"/>
-=======
     <wb-module deploy-name="Sousvide">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="Sousvide"/>
         <property name="java-output-path" value="/Sousvide/build/classes"/>
->>>>>>> e49dc4b9d2b0afa3d5949bc27a48fdb8a853a41b
->>>>>>> 768d4bb391ba0d583a989e64791a87fe241cd60c
     </wb-module>
 </project-modules>
