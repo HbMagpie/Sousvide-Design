@@ -181,7 +181,7 @@ li>a:hover { color: #666666; text-decoration: none}
 	margin-top: 50px;
 }
 
-.pj_list > h2 {margin-left: 20px; color: #666666;}
+.pj_list > h2 {margin-left: 50px; color: #666666;}
 
 .pj_list > ul {font-size:0;}
 
@@ -207,23 +207,17 @@ li>a:hover { color: #666666; text-decoration: none}
 /* End! 4. 프로젝트 */
 
 /* Start! 5. footer 부분 */
-<<<<<<< HEAD
-
-=======
->>>>>>> 822be9b36ba5dd5e5851fe04d82be74f75104145
-table {
-	width: 1200px;
-	height: 300px;
-	color: #666666;
-}
 footer {
 	width : 1200px;
 	margin : 0 auto;
 	color:#b0b0b0;
 	text-align: center;	
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 822be9b36ba5dd5e5851fe04d82be74f75104145
+table {
+	width: 1200px;
+	height: 300px;
+	color: #666666;
+}
+
 /* End! 5. footer 부분 */
