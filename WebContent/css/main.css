@@ -181,15 +181,15 @@ li>a:hover { color: #666666; text-decoration: none}
 	margin-top: 50px;
 }
 
-.pj_list > h2 {margin-left: 50px; color: #666666;}
+.pj_list > h2 {margin-left: 50px; color: #000000;}
 
-.pj_list > ul {font-size:0;}
+.pj_list > ul {font-size:0px;}
 
 .pj_list > ul > li {
 	display: inline-block;
 	vertical-align:top;
-	width: 30%;		/* 한 줄 이미지 각각 비율 */
-	margin-left:30px;
+	width: 28%;		/* 한 줄 이미지 각각 비율 */
+	margin-left:50px;
 }
 
 .pj_list > ul > li > a {
@@ -202,6 +202,12 @@ li>a:hover { color: #666666; text-decoration: none}
 .pj_list > ul > li > a .screen {
 	position: relative;
 	overflow: hidden;
+}
+
+.pj_list > ul > li > a .screen_name {
+	font-size: 25px;
+	color: #000000;
+	margin-top: 10px;
 }
 
 /* End! 4. 프로젝트 */
